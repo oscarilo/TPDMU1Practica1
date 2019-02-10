@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!--5 de los objetos básicos visto en clase-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Practica 1 TPDM"
+        android:textColor="#0000ff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulario de inventario:"
+        android:textColor="#ff0004"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/producto"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Producto"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/descripcion"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Información del proveedor:"
+        android:textColor="#ff0004"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/efectivo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Pago en efectivo." />
+
+        <RadioButton
+            android:id="@+id/credito"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pago con tarjeta de crédito." />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad recibida del producto:"
+        android:textColor="#ff0004"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/cantidad"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/cantidad" />
+
+    <Switch
+        android:id="@+id/factura"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recibió factura" />
+
+    <Button
+        android:id="@+id/validar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar" />
+
+    <Button
+        android:id="@+id/confirmar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="confirmar" />
+
+    <TextView
+        android:id="@+id/estatus"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="tex"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</LinearLayout>
